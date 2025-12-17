@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+</head>
+<body>
+    
+    <script>
+      
+    //   const userBasket = [
+    //  {id:1 ,name: "milk" , price: 110000}
+    // ,{id: 3 ,name: "water" ,price: 50000}
+    // ,{id:5 , name: "ice cream" , price:15000}
+    // ,{id:6 , name: "jelly" , price:35000}
+    // ,{id:5 , name: "coca cola" , price: 100000}
+    // ,{id: 2 , name: "snack" , price: 129000}
+    // ];
+    //   const productLessThan100 = userBasket.filter((product) => {
+    //     return product.price < 100000;
+    //   })
+    //   const shipingCost = productLessThan100.length * 5000;
+    //   console.log(shipingCost);
+    //   let sum = 0;
+    //    userBasket.forEach((product) => {
+    //     sum+= product.price;
+    //   })
+    //   console.log(sum)
+    //   const totalCost = sum+=shipingCost;
+    //   console.log(totalCost)
+
+
+
+    const numbers = [10,12,20,30,50,34,12];
+    const num = 10;
+    const names = "ali-mahdi-javad"
+    console.log(Array.isArray(numbers)); //true
+    console.log(Array.isArray(num)); //false
+    console.log(numbers.indexOf(34)); // 5
+    console.log(numbers.lastIndexOf(12)); //6
+    console.log(numbers.slice(1 , 5));//[12, 20, 30, 50]
+    console.log(numbers.join("-")); //10-12-20-30-50-34-12
+    console.log(numbers.reverse()); //[12, 34, 50, 30, 20, 12, 10]
+    console.log(names.split("")); //['a', 'l', 'i', '-', 'm', 'a', 'h', 'd', 'i', '-', 'j', 'a', 'v', 'a', 'd']
+    console.log(names.split("-")); //['ali', 'mahdi', 'javad']
+    
+      
+    </script>
+</body>
+</html>
