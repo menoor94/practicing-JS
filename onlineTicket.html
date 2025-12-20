@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online ticket</title>
+</head>
+<body>
+    
+
+  <script>
+
+
+    // var product = {id:1 , title: "laptop" , price: 90000000 ,count: 5}
+    // var newProduct = product
+
+    // newProduct.count = 10;
+
+    // console.log("newProduct",newProduct)
+    // console.log("product", product)
+
+    const cities = {
+      kermanshah: ["kangavar" , "harsin" , "sahneh" , "ghasr shiring" , "kermanshah" ]
+      , hamedan : [ "hamedan","asad abad" , "nahavand" , "malayer"]
+      , tehran : [ "tehran" , "robat karim" , "shahriar" , "golestan"]
+      , kurdestan : ["sanandaj " , "bukan" , "baneh " , "saqez " ,"marivan"]
+    }
+
+    const askProvince = prompt("Enter the province name you want to travel")
+
+    const mainProvince = cities[askProvince]
+    mainProvince.forEach((city) => {
+      console.log(city)
+    });
+
+  </script>
+</body>
+</html>
