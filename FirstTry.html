@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainin Java Script</title>
+</head>
+<body>
+    
+
+
+<script>
+// let userNumbers = [] ;
+
+// let userNum = 0;
+// let sum = 0;
+
+// while( userNum != -1) {
+//   userNum = Number(prompt("Enter a number"))
+
+//   if(userNum != -1) {
+//     userNumbers.push(userNum)
+
+//   }
+// }
+// for (let i =0 ; i < userNumbers.length ; i++) {
+//   sum = sum + userNumbers[i]
+// }
+// console.log(sum / userNumbers.length);
+
+// let Users = [
+// { name: "Mehdi" , family: "noorpazhouh", phone: "09185525185"},
+// { name: "ali" , family: "noorpazhouh" ,phone: "09305527159"},
+// { name: "javad " , family: "noorpazhouh", phone:"09184452218"}
+
+// ]
+// let userName = prompt("Enter your name");
+// let userFamily = prompt("Enter your family name");
+// let userPhone = Number(prompt("Enter your Phone number"));
+// let newUser;
+
+// if(userName.length< 3 || userName.length > 10) {
+//   alert("at least 3 characters and at most 10 char")
+// }else if (userFamily.length <3 || userFamily > 15 ) {
+//   alert(" at least 3 char and at most 15 char")
+// }else {
+//    newUser = {
+//   
+//   name: userName , 
+//   family: userFamily , 
+//   phone: userPhone
+// };
+// Users.push(newUser);
+// Users.forEach( (objects) => {
+//   console.log(objects)
+// })
+
+// }
+// if (Users.includes(
+// { name: "Mehdi" , family: "noorpazhouh", phone: "09185525185"})) {
+//   alert("Welcome")
+// }else{ alert("Your name is not in array")};
+
+// const users = ['ali','mehdi','javad','ahmad']
+
+// let nameEntry = prompt("Enter your name");
+// let checkName = users.includes(nameEntry , 0)
+// if(checkName === true){
+//   console.log("Welcome")
+// }else{
+//   console.log("Please sign in first")
+// }
+
+// let allProduct = [
+//   {, name:"milk" , price:25000},
+//   {, name: "chips" , price:30000},
+//   {, name: "ice-cream ", price:15000} , 
+//   {, name: "coca-cola" , price:45000}
+// ];
+
+// let userBasket = [
+//  {, name: "milk ", price:25000},
+//   {, name: "chips" , price:30000}
+// ];
+
+// let sum= 0;
+// const userReq = prompt ("Enter the product you need");
+// let reqProduct;
+// const isInShop = allProduct.some((product) => {
+//   if(product.name === userReq) {
+//     reqProduct = product;
+//     return true;
+//   }
+// })
+// if (isInShop===true) {
+//   userBasket.push(reqProduct);
+// } 
+// console.log(userBasket)
+// userBasket.forEach((product) => {
+//   sum = sum + product.price;
+// })
+// console.log(sum)
+
+// const students = [
+//     { name: "Alice", age: 22 },
+//     { name: "Bob", age: 25 },
+//     { name: "Charlie", age: 23 },
+//     { name: "Diana", age: 24 },
+//     { name: "Eve", age: 26 },
+//     { name: "Frank", age: 28 },
+//     { name: "Grace", age: 21 },
+//     { name: "Hannah", age: 27 },
+    
+
+// ];
+
+// const calculatingAges = students.every((ages) => {
+//   return ages.age > 20 ;
+// })
+// if(calculatingAges ===false ) {
+//   console.log("The meeting is canceled , one of you is younger than 20")
+// }else {
+//   console.log("The meeting will be started in just a few moments")
+// }
+
+
+// let numbers = [2,10,20,30,11,12];
+
+// // numbers.splice(2 , 4, 3 , 10 , 19 ,19 )
+// // console.log(numbers)
+
+// console.log(numbers.findIndex(3))
+
+// const shoppingCart = [
+//   { , name: "Wireless Mouse", price: 25.99 },
+//   { , name: "Keyboard", price: 45.00 },
+//   { , name: "HD Monitor", price: 149.99 },
+//   { , name: "USB-C Charger", price: 19.99 },
+//   { , name: "Laptop Stand", price: 29.50 },
+//   { , name: "Noise Cancelling Headphones", price: 89.99 },
+//   { , name: "Webcam", price: 39.00 },
+//   { , name: "External Hard Drive", price: 74.49 }
+// ];
+ 
+
+// let userCart = [
+//     { , name: "Wireless Mouse", price: 25.99 },
+//     { , name: "Keyboard", price: 45.00 },
+// ];
+
+// const addOrRemove = prompt("Please \n if you want to add new product to your cart Enter number 1 \n if you want to remove product Enter number 2 ");
+
+// if ( addOrRemove === "1" ){ 
+//     let userReq;
+//     const addingProduct = prompt("Enter the name of the product you need")
+//     const isInShop = shoppingCart.some((product) => {
+//         if(product.name === addingProduct) {
+//             console.log("successfull ✔")
+//             userReq = product;
+//             return true 
+//         }
+//         return false;
+//     })
+//     if(isInShop === true ) {
+//         let newProduct = {
+//             
+//             name:userReq.name,
+//             price:userReq.price,
+//         }
+//         userCart.push(newProduct);
+//         console.log(userCart)
+//     }
+
+// }
+
+
+
+//  else if(addOrRemove === 2) {
+//     const removing = prompt("Enter the name of product you wanna remove")
+// }
+
+// const numbers = [1,4,6,10,12]
+// const scorePower = numbers.map((score)=>{
+//     return score**2;
+// })
+// console.log(scorePower);
+
+// const names = ['ali','mehdi','mamad','javad','ahmad' ]
+// const filterNames = names.filter((name) => {
+//     return name.length >4
+// })
+// console.log(filterNames)
+
+const allProduct = [
+     {id:1,name:"milk",price:10000}
+    ,{ id:2,name: "snack", price:12900}
+    ,{ id:3,name:"water" , price:5000}
+    ,{id:4,name:"ice cream" , price: 15000}
+    ,{ id:5,name:"coca cola" , price: 10000}
+    ,{ id:6,name:"jelly" , price: 3500}
+    ,{ id:7,name:"cheese" , price: 25000}
+];
+let userBasket = [
+    {id:1 ,name: "milk" , price: 10000}
+    ,{id: 3 ,name: "water" ,price: 5000}
+    ,{id:5 , name: "ice cream" , price:15000}
+    ,{id:6 , name: "jelly" , price:3500}
+    ,{id:5 , name: "coca cola" , price: 10000}
+    ,{id: 2 , name: "snack" , price: 12900}
+];
+
+ console.log(userBasket)
+const userRequest = prompt("please Enter a number: \n 1: Add product \n 2: Remove product");
+if(userRequest === "1") {
+  const userProductName = prompt("Please Enter the product name you want to add");
+  let productData ; 
+  const isInShop = allProduct.some((product) => {
+    if(userProductName === product.name) {
+     productData = product;
+     return true;
+    }
+  })
+  console.log(productData);
+  if(isInShop === true) {
+    let newProduct = {
+      id:productData.id,
+      name:productData.name,
+      price: productData.price
+    }
+    userBasket.push(newProduct);
+    console.log(userBasket)
+  }
+}else if(userRequest === "2") {
+  const userProductRemove = prompt("Enter the name of the product you want to remove");
+  const productIndex = userBasket.findIndex((product)=> {
+    return product.name.toLowerCase() === userProductRemove.toLowerCase()
+  })
+  userBasket.splice(productIndex ,1 )
+  console.log(userBasket)
+}else{
+    alert("please only Enter 1 or 2 , The number you Entered is not correct");
+  }
+  function sumBasket (basket) {
+  let sum = 0;
+  basket.forEach((product) => {
+   sum+=product.price;
+ });
+  return sum;
+}
+let totalPrice = sumBasket(userBasket);
+console.log(totalPrice)
+
+const shiping = 5000;
+if(totalPrice <= 50000) {
+   let shipingCost= totalPrice += shiping;
+   alert("The total fee is : " +  shipingCost);
+}
+else{
+  alert("The total fee with free shiping : " + totalPrice)
+}
+
+</script>
+</body>
+</html>

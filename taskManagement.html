@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+</head>
+<body>
+    
+  <script>
+
+    const employees = {
+      ali: ['html', 'css', 'Javascript'],
+      mehdi: ['python', 'SQL'],
+      javad: ['admin', 'c++'],
+      saleh: ['node js','react', 'vue']
+    };
+
+    const employeeName = prompt("Enter the name of employee you want to add new tasks for him")
+    const employeeTask = prompt("Enter the task you want to add for employee")
+
+    const getEmployee = employees[employeeName]
+    getEmployee.push(employeeTask)
+    console.log(employees)
+
+    //Add this to git
+  </script>
+</body>
+</html>

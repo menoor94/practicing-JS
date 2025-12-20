@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    
+
+    <script>
+      let todoArray = [
+        {id: 1,title:"Learn Javascript" , isDoing:false}, 
+        {id: 2,title:"Make dinner" , isDoing:true} ,
+        {id: 3,title:"Go to gym" , isDoing:false} 
+      ];
+
+      const askUser = prompt("Enter a number \n 1: Add Todo \n 2: Remove Todo \n 3: Do Todo")
+
+      if(askUser === "1" ){
+        const askNewTodo = prompt("Enter what you want to ADD ➕");
+        let newTodo = {
+          id: todoArray.length + 1,
+          title: askNewTodo,
+          isDoing: false,
+        };
+        todoArray.push(newTodo);
+        console.log(todoArray)
+
+      }else if( askUser ==="2") {
+        const rmvTodo = prompt("Enter the name of todo you want to REMOVE ❌")
+
+        const index = todoArray.findIndex((todo) => {
+          return todo.title.toLowerCase().trim() === rmvTodo.toLowerCase().trim();
+        })
+        todoArray.splice(index , 1)
+        console.log(todoArray)
+        
+      }else if (askUser ==="3" ){
+        const doTodoPrompt = prompt("Enter the name of todo you want to be DONE ✔");
+
+        todoArray.forEach((todo) => {
+          if(doTodoPrompt.toLowerCase().trim() === todo.title.toLowerCase().trim()) {
+            todo.isDoing = true
+            console.log(todoArray)
+          }
+        })
+      }
+
+    </script>
+
+</body>
+</html>
