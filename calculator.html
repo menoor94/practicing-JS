@@ -12,8 +12,24 @@
 
     const firstNum = Number(prompt("Enter the first number you want to do math with " , 0))
     const secNum = Number(prompt("Enter the second number you want to do math with", 0))
-    const operation = prompt("Enter the Operation you wanna do with these two numbers you Entered" , "Addition – Subtraction – Multiplication – Division");
+    const operation = prompt("Enter the Operation number you wanna do with these two numbers you Entered , 1.+ , 2.- , 3.* , 4./");
 
+    if(operation === "1")
+  {console.log(firstNum + secNum )}
+
+  if(operation === "2")
+  {console.log(firstNum - secNum)}
+
+  if(operation === "3")
+  {console.log(firstNum * secNum)}
+
+  if(operation === "4")
+  {console.log(firstNum / secNum)}
+
+  //You can also use functions to do the operations 
+  //function(num1 , num2){return num1 + num2}
+  //function(num1 , num2){return num1 * num2}
+  
     
     
   </script>
