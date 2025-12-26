@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> document object model </title>
+</head>
+<body>
+
+  <p class="p1">Hello World!</p>
+  <p id="p2">Hello World!</p>
+  <p >Hello World!</p>
+  <h6 class="title">Title</h6>
+
+  <input type="text" id="input" value="Hello world!">
+
+  <div id="first-div">
+
+  </div>
+
+
+
+  <script>
+
+    const paragraph = document.getElementsByClassName("p1");
+    //console.log(paragraph)
+    
+    const paragraph2 = document.getElementById("p2")
+    //console.log(paragraph2)
+
+    const paragraph3 = document.getElementsByTagName("p")
+    //console.log("Elements : " + paragraph3)
+
+
+    paragraph[0].setAttribute("id"  , "menoor")
+    console.log(paragraph);
+    document.querySelector(".p1").innerHTML = "Hello mehdi";
+   
+    const h6Tag  = document.getElementsByClassName("title")
+    h6Tag[0].setAttribute("id" , "titi")
+    document.getElementById("titi").style.color = "red" ;
+
+    const input = document.getElementById("input")
+    input.value = "Bye"
+    console.log(input.value);
+
+    const newElem = document.createElement("p");
+    newElem.innerText = "Hello ,  I'm Mehdi ";
+    const getDiv = document.getElementById("first-div")
+    getDiv.appendChild(newElem)  
+
+    newElem.setAttribute( "id" , "new-element")
+    const getNewElem = document.getElementById("new-element")
+    getNewElem.style.color = "red"
+
+    
+  </script>
+</body>
+</html>

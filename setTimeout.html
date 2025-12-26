@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+
+    <script>
+
+
+            // setTimeout((num1 , num2 , num3 ,num4 , num5 = 20 , num6 = 30) =>{
+            //     alert(num1 + num2 + num3 + num4 + num5 + num6)
+            // }, 1000, 10 , 4, 8 , 5  );
+
+        // const profilePhoto = false;
+
+        // setTimeout((profile) => {
+        //     if(!profile) {
+        //         alert("please set a profile ")
+        //     }
+        // }, 5000 , profilePhoto)
+
+
+
+        const usernamePrompt = prompt("Enter your name")
+
+        const users = ["ali" , "mehdi" , "javad" ,"ahmad"]
+        let falsyOrTruthy = false ; 
+        for(let i = 0 ; i < users.length ; i++) {
+            if(users[i] === usernamePrompt) {
+                falsyOrTruthy = true;
+            }
+        }
+        if(falsyOrTruthy) {
+            alert("Welcome sir !")
+        }else{ 
+            alert("You are not registered")
+        }
+    </script>
+</body>
+</html>
