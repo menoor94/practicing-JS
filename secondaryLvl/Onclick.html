@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> onclick method </title>
+</head>
+<body>
+    
+
+  <button id="light-but" onclick="onOrOff()">Turn on / Turn off</button>
+  <img src="../images/light bulb off.jfif" id="lightbulb" alt="light bulb">
+  <!-- my method -->
+  <!-- <div id="main-div"><img src="../images/light bulb off.jfif" alt=""></div> -->
+
+
+  <button id="but" onclick="clickFunction()">Click here</button>
+  <h1 id="title">HELLO WORLD!</h1>
+
+  <script>
+
+   function clickFunction() {
+      const getBut = document.getElementById("but")
+      getBut.textContent = "successfully done"
+      getBut.style.backgroundColor =  "red"
+      const getH1 = document.getElementById("title")
+      getH1.style.color = "brown"
+    } 
+
+
+    const turnBulbButt = document.getElementById("lightbulb")
+    let bulbFlag = false ;
+
+    function onOrOff() {
+
+      if(!bulbFlag) {
+        turnBulbButt.setAttribute("src" , "../images/light bulb.jfif")
+        bulbFlag = true; 
+      }else {
+        turnBulbButt.setAttribute("src" , "../images/light bulb off.jfif")
+        bulbFlag = false
+      }
+
+    }
+
+    //my method 
+    // function turnLight () {
+    //   const turnLightBut = document.getElementById("light-but")
+    //   turnLightBut.textContent = "light bulb is on !"
+
+    //   const getDiv = document.getElementById("main-div")
+    //   getDiv.innerHTML = `<img  src= "../images/light bulb.jfif">`
+    // }
+  </script>
+</body>
+</html>
