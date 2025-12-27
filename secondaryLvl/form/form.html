@@ -13,9 +13,10 @@
     <div class="main-form" >
 
 
-    <input type="text" placeholder="username" id="username">
-    <input type="password" placeholder="password" id="pass">
-
+    <input onkeypress="usernameValidation()" type="text" placeholder="username" id="username">
+    <p class="username-warn"></p>
+    <input onkeypress="passValidation()" type="password" placeholder="password" id="pass">
+    <p  class="pass-warn username-warn"></p>
     <button onclick="validation()" id="login-btn">Login</button>
 
     

@@ -24,3 +24,23 @@
   } , 2000)
   return false;
  }
+
+ const usernameWarn = document.querySelector(".username-warn");
+
+ const passWarn = document.querySelector(".pass-warn")
+
+ function usernameValidation() {
+  if(getUsername.value.length < 12) {
+    usernameWarn.textContent = "At least 12 character's";
+  }else if( getUsername.value.length >= 12){
+    usernameWarn.style.display= "none"
+  }
+ }
+
+ function passValidation() {
+  if( getPass.value.length < 8) {
+    passWarn.textContent = "At least 8 character's";
+  }else if( getPass.value.length >= 8){
+    passWarn.style.display= "none"
+  }
+ }
