@@ -1,7 +1,7 @@
 
 
 
-
+ const getLoginBtn = document.getElementById("login-btn")
  const getUsername = document.getElementById("username")
  const getPass = document.getElementById("pass")
 
@@ -44,3 +44,30 @@
     passWarn.style.display= "none"
   }
  }
+
+ function usernameFocus () {
+  getUsername.style.backgroundColor = "white";
+ }
+ function usernameBlur (){
+  getUsername.style.backgroundColor  = "rgb(112, 209, 112)"
+ }
+
+ 
+ function passFocus () {
+  getPass.style.backgroundColor = "white";
+ }
+ function passBlur (){
+  getPass.style.backgroundColor  = "rgb(112, 209, 112)"
+ }
+
+
+
+ function btnFocus () {
+  getLoginBtn.style.backgroundColor = "white";
+ }
+ function btnBlur (){
+  getLoginBtn.style.backgroundColor  = "rgb(125, 216, 228)"
+ }
+
+
+ 

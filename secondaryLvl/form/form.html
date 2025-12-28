@@ -13,11 +13,17 @@
     <div class="main-form" >
 
 
-    <input onkeypress="usernameValidation()" type="text" placeholder="username" id="username">
+    <input
+    onfocus="usernameFocus()" onblur="usernameBlur()" 
+     onkeypress="usernameValidation()" type="text" placeholder="username" id="username">
     <p class="username-warn"></p>
-    <input onkeypress="passValidation()" type="password" placeholder="password" id="pass">
+    <input
+    onfocus="passFocus()" onblur="passBlur()"
+    onkeypress="passValidation()" type="password" placeholder="password" id="pass">
     <p  class="pass-warn username-warn"></p>
-    <button onclick="validation()" id="login-btn">Login</button>
+    <button
+    onfocus="btnFocus()" onblur="btnBlur()"
+    onclick="validation()" id="login-btn">Login</button>
 
     
   </div>
