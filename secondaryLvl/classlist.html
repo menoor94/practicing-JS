@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Classlist</title>
+    <style>
+
+        .green{
+            
+            color:green;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .red{
+            color:red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Hello I'm Mehdi</h1>
+
+
+
+    <button class="event-btn">CLick to change the color</button>
+    <p>If you double click The text will be red </p>
+    <p>And if you click once text will be green</p>
+    <script>
+        const title = document.querySelector('.title')
+        const eventBtn = document.querySelector(".event-btn")
+
+        eventBtn.addEventListener("dblclick" , () =>{
+            title.classList.remove("green")
+            title.classList.toggle("red")
+        })
+        
+        eventBtn.addEventListener("click" , () =>{
+            title.classList.remove("red")
+            title.classList.add("green")
+        })
+
+
+    </script>
+</body>
+</html>
