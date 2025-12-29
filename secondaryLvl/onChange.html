@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> onchange Event</title>
+
+    <style>
+        .country-name{
+            display: none;
+
+        }
+        .new-class{
+            display: inline;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            position: absolute;
+            right: 5px;
+            top: 0;
+        }
+        #country-selector{
+            width: 100px;
+            box-sizing: border-box;
+            height: 25px;
+            position: absolute;
+            margin-top: 20px;
+            border: none;
+            background-color: green;
+            color: white;
+            border-radius: 2px;
+            padding: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+        #country-selector:focus{
+            outline: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <select  id="country-selector">
+        <option value="iran">iran</option>
+        <option value="iraq">iraq</option>
+        <option value="russia">russia</option>
+        <option value="saudi arabia">saudi arabia</option>
+        <option value="kuwait">kuwait</option>
+        <option value="afghanistan">afghanistan</option>
+    </select>
+
+    <p class="country-name"></p>
+
+</div>
+    <script>
+        const countries = document.getElementById("country-selector")
+        countries.addEventListener("change" , () => {
+            const countryNameDisplayer = document.querySelector(".country-name")
+            countryNameDisplayer.classList.add("new-class")
+            countryNameDisplayer.textContent = countries.value;
+
+        }) 
+    </script>
+</body>
+</html>

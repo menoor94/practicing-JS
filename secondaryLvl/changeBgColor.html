@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Change background color</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .header{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="header"> |Hello World!|</h1>
+
+    <script>
+        const getHeader = document.querySelector(".header")
+        const bdy = document.body;
+        
+        // setInterval(() => {
+        //     let randomNum = Math.random()* 10;
+        //     console.log(randomNum)
+        //     getHeader.style.color = "white"
+        //     if(randomNum < 2.5 ) {
+        //         bdy.style.backgroundColor = "red"
+        //     }else if(randomNum < 5 && randomNum > 2.5) {
+        //         bdy.style.backgroundColor = "green"
+        //     }else if (randomNum <7.5 && randomNum> 5) {
+        //         bdy.style.backgroundColor = "orange"
+        //     }else if (randomNum < 10 && randomNum > 7.5) {
+        //         bdy.style.backgroundColor = "black"
+        //     }
+
+        // } , 1000)
+
+        let mathColor ;
+        const colorArr = ['red' , 'blue' , 'orange', 'green ' , 'brown']
+
+        setInterval(() => {
+            getHeader.style.color = "white"
+            mathColor = Math.floor(Math.random() * colorArr.length) ; 
+            console.log(mathColor)
+            document.body.style.backgroundColor  = colorArr[mathColor];
+        } , 500)
+        
+    </script>
+</body>
+</html>
