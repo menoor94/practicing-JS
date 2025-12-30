@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book fly ticket </title>
+    <link rel="stylesheet" href="./bookTicket.css">
+</head>
+<body>
+    
+<div class="form-container">
+    <div class="form">
+        <input type="text" class="input " id="fname-input" placeholder="first name">
+        <input type="text" class="input" id="lname-input" placeholder="last name">
+        <input type="email" class="input" id="email-input" placeholder="Email" >
+
+        <input type="number" class="input" id="phone-input" placeholder="phone number" >
+
+        <select class="input selector" name="countries" id="countries"> 
+            <option class="input selector " value="select-country" >select country</option>
+            <option class=" selector" value="iran">Iran</option>
+            <option class=" selector" value="turkey">Turkey</option>
+            <option class=" selector" value="saudiArabia">Saudi arabia</option>
+            <option class=" selector" value="armenia">Armenia</option>
+            <option class=" selector" value="russia">Russia</option>
+        </select>
+
+
+        <select name="cities" class="input selector" id="city-selector">
+            <option value="select-city">select city</option>
+        </select>
+
+        <button class="submit-btn">Book your ticker</button>
+    </div>
+
+</div>
+
+
+
+
+    <script src="./bookTicket.js"></script>
+</body>
+</html>
