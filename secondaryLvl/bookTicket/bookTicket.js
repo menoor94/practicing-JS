@@ -1,3 +1,12 @@
+const submitBtn = document.querySelector(".submit-btn")
+submitBtn.addEventListener("click" , ()=>{
+    submitBtn.classList.toggle("focus")
+})
+
+
+
+
+
 const countryData = {
     iran:["tehran" , "kermanshah" , "shiraz" , "mashhad"]
     ,turkey:["ezmir" , "istanbol", "ankara"]
@@ -6,24 +15,24 @@ const countryData = {
     ,armenia:["yervan" , "gyumri" , "vanadzor"]
 }
 // console.log(countryData.russia)
+const d = document;
+const countrySelect = d.getElementById("countries")
+const citySelect = d.getElementById("city-selector")
 
-const countrySelector = document.getElementById("countries")
-const citySelector  = document.getElementById("city-selector")
-
-countrySelector.addEventListener("change" , () =>{
-    const countryName = countrySelector.value
-    const cityName = countryData[countryName]
-
-    if(countrySelector.value === 'select-country' )
-    {
-        citySelector.innerHTML = ''
-        citySelector.innerHTML = '<option>select city</option>' 
+countrySelect.addEventListener("change" , () => {
+    const mainCountryName= countrySelect.value
+    const mainCityName = countryData[mainCountryName]
+     
+    if(mainCountryName==="select-country"){
+        citySelect.innerHTML = "<option>select city</option>"
     }else{
-
-        citySelector.innerHTML = ''  
-        cityName.forEach((city) => {
+        
+        citySelect.innerHTML = ''
+        mainCityName.forEach((city) => {
+            citySelect.innerHTML += "<option>"+city+"</option>"
             
-         citySelector.innerHTML += '<option>'+city+'</option>' 
-        })
+        });
     }
+    
+    
 })
